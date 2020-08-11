@@ -4,17 +4,17 @@ $(function() {
       var id = $(this).data("id");
       var newDevour = $(this).data("newdevour");
   
-      var newDevourCondition = {
-        devour: newDevour
+      var newDevourStatus = {
+        devoured: newDevour
       };
   
-      // Ajax PUT request to update burger condition
+      // Ajax PUT request to update burger status
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
-        data: newDevourCondition
+        data: newDevourStatus
       }).then(
         function() {
-          console.log("Changed burger condition");
+          console.log("Changed burger status");
           // Reload the page to get the updated list
           location.reload();
         }
@@ -26,9 +26,8 @@ $(function() {
       event.preventDefault();
   
       var newBurger = {
-        name: $("#newBur").val().trim(),
-        devoured: false
-        // devour: $("[name=devour]:checked").val().trim() ==================
+        burger_name: $("#newBur").val().trim(),
+        devoured: $("[name=devour]:checked").val().trim()
       };
   
       // Ajax POST request to add new burger to api/burgers
