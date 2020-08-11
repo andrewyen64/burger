@@ -1,0 +1,103 @@
+/* main/header sections */
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+}
+
+.header {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    max-width: 650px;
+    background-color: orange;
+    color: black;
+    justify-content: center;
+}
+
+.burger {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    float: leftr;
+    clear: both;
+}
+
+.label {
+    font-weight: bold;
+}
+
+/* Not devoured/Devoured burger sections */
+.container {
+    padding: 20px;
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: rgb(255, 169, 63);
+    color: white;
+    max-width: 400px;
+    font-size: 20px;
+}  
+
+.notDevoured { 
+    padding-right: 10%;
+}
+
+.notDevoured h2,
+.devoured h2 {
+    padding-bottom: 10px;
+}
+
+.change-devour {
+    background-color: white;
+    border-color: silver;
+    font-size: 20px;
+}
+
+.change-devour:hover {
+    background-color: green;
+    color: white;
+}
+
+/* Add a Burger section */
+h2 {
+    margin: auto;
+    padding-top: 20px;
+    max-width: 600px;
+    justify-content: left;
+    text-decoration: underline;
+}
+
+.addBurger {
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    padding: 20px;
+    clear: both;
+}
+
+#submit {
+    background-color: white;
+    border-color: silver;
+    font-size: 18px;
+    height: 50px;
+    background-color: orange;
+    color: black;
+}
+
+#submit:hover {
+    background-color: green;
+    color: white;
+}
+
